@@ -5,3 +5,29 @@
 article.blue-text{
   color: blue;
 }
+
+a{
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover{ /*Pseudo class hoover!*/
+  color: red;
+}
+
+a:active{ /*Pseudo class active!*/
+  color: black;
+}
+
+
+a:visited{ /*Pseudo class visited!*/
+  color: orange;
+}
+
+.child-exp p:nth-child(2n+1){
+  color: red;
+}
+
+.child-exp p:nth-child(2n){
+  color: orange;
+}
