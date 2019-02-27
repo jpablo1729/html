@@ -1,0 +1,49 @@
+/*p::first-letter{
+  color: blue;
+  font-size: 200px;
+}*/
+
+/*p::first-line{
+  color: blue;
+  font-size: 200px;
+}*/
+
+p::before{
+  content: ".";
+}
+
+p::after{
+  content: "!";
+}
+
+.float{
+  float: left;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+
+.clear{
+  clear: both;
+}
+
+.box-1{
+  width: 50%;
+  float: left;
+}
+
+.box-2{
+  width: 50%;
+  float: right;
+}
+
+.box-1 .inner-box{
+  height: 400px;
+  background: red;
+  margin-right: 15px;
+}
+
+.box-2 .inner-box{
+  height: 400px;
+  background: blue;
+  margin-left: 15px; 
+}

@@ -1,0 +1,25 @@
+.rounded-corners{
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+
+.circle-image{
+  border-radius: 50%;
+}
+
+.block{
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  padding: 60px;
+}
+
+.grad{
+  background: blue;
+  /*background: linear-gradient(to bottom, rgb(30, 30, 30), orange);
+  background: radial-gradient(rgb(30, 30, 30), orange);*/
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), orange);
+  height: 200px;
+  width: 1200px;
+
+}
