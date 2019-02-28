@@ -1,0 +1,106 @@
+/*Take away all margin and padding for default in the page.*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Butterfly Kids', cursive;
+}
+
+body{
+  background: #eeeeee;
+}
+
+.tm-header{
+  background: #ffffff;
+  height: 110px;
+}
+
+/*Truco para poner dos objetos flotantes logo and nav abajo de header. Yo lo
+reemplazo con header hegith!
+.tm-header::after{
+  content: " ";
+  clear: both;
+  display: block;
+}
+*/
+
+.tm-container{
+  max-width: 900px;
+  max-height: 900px;
+  margin: 0 auto; /*No margin top or bottom but yes left or rigth. Auto center!*/
+}
+
+.tm-logo{
+  float: left;
+  padding: 10px 10px;
+}
+
+.tm-nav{
+  float: right;
+}
+
+.tm-nav ul{
+  margin-bottom: 0px;
+}
+
+.tm-nav ul li{
+  display: inline-block;
+}
+
+.tm-nav ul li a{
+  padding: 10px 20px; /*Every link has a padding of 10p top-bottom and 20px left-rigth.*/
+  display: inline-block;
+  text-decoration: none;
+  color: #303030;
+  line-height: 85px;
+  font-size: 27px;
+}
+
+.tm-home:hover{
+  color: #00e6e6;
+}
+
+.tm-service:hover{
+  color: #ff471a;
+}
+
+.tm-about:hover{
+  color: #88cc00;
+}
+
+.tm-contact:hover{
+  color: #e68a00;
+}
+
+/*Second part.*/
+
+.tm-content{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tm-section-a{
+
+}
+
+.tm-article{
+  background: #fff;
+  padding: 30px;
+}
+
+img{
+  display: block;
+  max-width: 100%; /*Made image responsed with the browser window size */
+}
+
+p{
+  margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin-bottom: 10px;
+}
+
+ul, ol{
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
