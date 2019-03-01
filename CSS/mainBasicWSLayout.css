@@ -11,17 +11,21 @@ body{
 
 .tm-header{
   background: #ffffff;
-  height: 110px;
+  /*height: 110px;*/
 }
 
-/*Truco para poner dos objetos flotantes logo and nav abajo de header. Yo lo
-reemplazo con header hegith!
-.tm-header::after{
+/*Truco para poner en linea dos objetos flotantes: logo and nav en header.
+Explicacion: el contenedor que tiene dos objetos flotantes debe ser limpiado.
+por la clase tm-fix, quien pone un nuevo contenido - vacio - y limpia los dos
+componentes flotantes.
+Otra opcion es usar heigth en tm-header.*/
+.tm-fix::after{
   content: " ";
   clear: both;
   display: block;
+  visibility: none;
 }
-*/
+
 
 .tm-container{
   max-width: 900px;
@@ -128,6 +132,6 @@ ul, ol{
   background: #fff;
   text-align: center;
   padding: 20px;
-  clear: both; /*Con el truco especial classe tm-header::after aplicado a container div
-  se puede solucionar esto.*/
+  /*clear: both; Con el truco especial classe tm-fix::after aplicado a container div
+  se puede solucionar esto. O aqui se usa clear: both.*/
 }
