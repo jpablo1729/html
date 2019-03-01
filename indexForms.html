@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Forms</title>
+    <link rel="stylesheet" type="text/css" href="CSS/mainForms.css">
+  </head>
+  <body>
+    <form action="" method="post"> <!-- action: place to sed the information with the form content. Normaly is a *.js.  -->
+      <!-- method: get or post. If we use get, after submit a form, then the url show something like: http://localhost:8888?var=10&name=juan -->
+      <!-- get is not secure, if you send passwords or something like this. Therefore we have post. Send more data! Note: Get is default!!!-->
+      <input type="text" name="name" placeholder="Your Name"></input> <br/><br/>
+      <input type="password" name="password" placeholder="Your password"></input> <br/><br/>
+
+      <label for="sing_up">Sing me up for the newsletter</label>
+      <input type="checkbox" id="sing_up" name="sing_up" checked="checked"></input><br/>
+      <label for="sing_up_sp">Sing me up for specials offers</label>
+      <input type="checkbox" id="sing_up_sp" name="sing_up_sp" checked="checked"></input><br/>
+      <label for="sing_up_m">Sing me up for premium membership</label>
+      <input type="checkbox" id="sing_up_m" name="sing_up_sp" checked="checked"></input><br/>
+
+      <label for="male">Male</label>
+      <input type="radio"  name="gender" id="male" value="male"></input><br/>
+      <label for="female">Female</label>
+      <input type="radio"  name="gender" id="female" value="female"></input><br/>
+      <label for="other">Other</label>
+      <input type="radio"  name="gender" id="other" value="other"></input><br/><br/>
+
+      <input type="file" name="file_upload"></input><br/><br/>
+
+      <input type="email" name="email" placeholder="E-Mail"></input><br/><br/>
+
+      <input type="tel" name="tel" placeholder="Telefon"></input><br/><br/>
+
+      <input type="month" name="month" placeholder="Month"></input><br/><br/>
+
+      <input type="time" name="time" placeholder="Time"></input><br/><br/>
+
+      <input type="range" name="range" placeholder="Range"></input><br/><br/>
+
+      <input type="submit" value="Submit"></input>
+    </form>
+  </body>
+</html>
