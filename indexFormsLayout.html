@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Forms layout</title>
+    <link rel="stylesheet" type="text/css" href="CSS/mainFormsLayout.css">
+  </head>
+  <body>
+    <form action="" method="post"> <!-- action: place to sed the information with the form content. Normaly is a *.js.  -->
+      <!-- method: get or post. If we use get, after submit a form, then the url show something like: http://localhost:8888?var=10&name=juan -->
+      <!-- get is not secure, if you send passwords or something like this. Therefore we have post. Send more data! Note: Get is default!!!-->
+      <div class="form-row">
+        <div class="form-label">
+          <label for="name">Name: </label>
+        </div>
+        <div class="form-input">
+          <input type="text" name="name" id="name" placeholder="Your Name">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="password">Password: </label>
+        </div>
+        <div class="form-input">
+          <input type="password" name="password" id="password" placeholder="Password">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="checkbox">Si o no: </label>
+        </div>
+        <div class="form-input">
+          <input type="checkbox" id="checkbox" name="checkbox">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="country">Country: </label>
+        </div>
+        <div class="form-input">
+          <select id="country" name="country">
+            <option>Columbien</option>
+            <option>Germany</option>
+            <option>Denemark</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="message">Text me: </label>
+        </div>
+        <div class="form-input">
+          <textarea id="message" name="message" placeholder="message"></textarea>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </body>
+</html>
