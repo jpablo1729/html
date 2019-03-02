@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>Forms</title>
-    <link rel="stylesheet" type="text/css" href="CSS/mainForms.css">
+    <link rel="stylesheet" type="text/css" href="CSS/mainFieldSets.css">
   </head>
   <body>
     <form action="" method="post"> <!-- action: place to sed the information with the form content. Normaly is a *.js.  -->
@@ -23,21 +23,20 @@
         <textarea cols="50" rows="2" placeholder="Tell us something about you">
 
         </textarea>
-      </fieldset>
+      </fieldset><br/><br/>
       <fieldset><!-- Fieldset and legend are always thogeter -->
         <legend>
           Family data
         </legend>
-      </fieldset>
+      </fieldset><br/><br/>
       <fieldset><!-- Fieldset and legend are always thogeter -->
         <legend>
           Job data
         </legend>
-      </fieldset>
-
-
-
-      <input type="submit" value="Submit"></input>
+      </fieldset><br/><br/>
+      <label for="related_to_submit" id="related_to_submit">Related to submit: </label><input type="text" name="related_to_submit" id="related_to_submit" placeholder="Related to submit"></input>
+      <input type="submit" value="Submit"></input><br/><br/>
+      <input type="button" value="Button"></input>
     </form>
   </body>
 </html>

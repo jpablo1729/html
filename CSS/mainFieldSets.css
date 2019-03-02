@@ -1,0 +1,10 @@
+input[type="submit"],input[type="button"]{/*Apply the style to every button */
+  background: #bb0000;
+  border: 0px;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+input[id="related_to_submit"]{
+  height: 28px;
+}
