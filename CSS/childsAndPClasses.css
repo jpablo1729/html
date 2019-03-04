@@ -2,7 +2,7 @@
   color: red;
 }
 
-article.blue-text{
+.blue-text{
   color: blue;
 }
 
@@ -18,7 +18,6 @@ a:hover{ /*Pseudo class hoover!*/
 a:active{ /*Pseudo class active!*/
   color: black;
 }
-
 
 a:visited{ /*Pseudo class visited!*/
   color: orange;
